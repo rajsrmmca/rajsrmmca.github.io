@@ -34,7 +34,9 @@ $(document).ready(function(){
 
     }
     
-    
+    $(document).on('focus mousedown', '.numKey', function(){
+        addValueToField(this.value);
+    });
     
     function addValueToField(myValue){
         console.log(inputToggle);
