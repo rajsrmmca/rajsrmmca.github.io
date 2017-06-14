@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     }
    
-   $(document).on('click', '.numKey', function(){
+   $(document).off().on('click', '.numKey', function(){
     	//myValue = ;
     	addValueToField(this.value);
     })
