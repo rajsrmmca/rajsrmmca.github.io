@@ -33,6 +33,12 @@ $(document).ready(function(){
 //         }, 100);
 
     }
+   
+   $(document).on('click', 'numKey', function(){
+    	//myValue = ;
+    	addValueToField(this.value);
+    })
+   
     function addValueToField(myValue){
         console.log(inputToggle);
         //to bring up alphabet keyboard
