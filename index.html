@@ -15,6 +15,51 @@
 	opacity: 0;
     	z-index: -1;
 }
+	
+	
+#switch{
+	background:black;
+	height:193px;
+	width:100vw;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family:"Roboto";
+	display:none;
+	align-items: stretch;
+	font-size:16px;
+	z-index:100 !important;
+}
+
+#switch button {
+	border:solid;
+	background:none;
+	height:100%;
+	margin:0;
+	width:10%;
+
+	color:white;
+	font-size:22px;
+	border-radius:none;
+	outline:none;
+	padding-left: 40px;
+	padding-right: 40px;
+
+}
+#switch button:active{
+	background:rgba(0,0,0,0.2);
+}
+
+.showAll{
+	overflow:hidden;
+	text-overflow:ellipsis !important;
+	white-space : nowrap;
+	max-width:inherit;
+
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
 	</style>
   <body>
  
