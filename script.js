@@ -23,14 +23,14 @@ $(document).ready(function(){
     function hideKeyboard(element) {
         $(element).attr('readonly', 'readonly'); // Force keyboard to hide on input field.
 
-        setTimeout(function() {
-            $(element).blur();  //actually close the keyboard
-            document.activeElement.blur();
-            $('input').blur(); // trigger blur event from all inputs.
-            // Remove readonly attribute after keyboard is hidden.
-            $(element).removeAttr('readonly');
-           // $(element).focus(); //bring cursor back to the input field
-        }, 100);
+//         setTimeout(function() {
+//             $(element).blur();  //actually close the keyboard
+//             document.activeElement.blur();
+//             $('input').blur(); // trigger blur event from all inputs.
+//             // Remove readonly attribute after keyboard is hidden.
+//             $(element).removeAttr('readonly');
+//            // $(element).focus(); //bring cursor back to the input field
+//         }, 100);
 
     }
     function addValueToField(myValue){
