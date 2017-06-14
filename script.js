@@ -5,7 +5,7 @@ $(document).ready(function(){
     //add numbers 0-9
 
         numButtons += "<div class='row' style='margin-left:0px;'><div class='col-xs-4' style='text-align: center;'><button class='numKey' value='1' onclick='addValueToField(this.value)'  />" + 1 + "</button></div>"
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='2' onclick='addValueToField(this.value)'  />" + 2 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='2'   />" + 2 + "</button></div>"
     numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='3' onclick='addValueToField(this.value)'  />" + 3 + "</button></div>"
 
     numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='4' onclick='addValueToField(this.value)'  />" + 4 + "</button></div>"
