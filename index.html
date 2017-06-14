@@ -19,6 +19,7 @@
   <body>
  
 <input id="hiddenInput" type="number" class='hideOpacity' value="0"/>
+<div id="switch"><button id="keyboard-button"></button></div>
 <div class="form-group required keyboard">
 	<label for="inboundNumber" class="control-label">
 	Inbound Number
@@ -28,7 +29,7 @@
 	required="required"
 	id="inboundNumber" maxlength="15" 
 	type="text">
-	<button id="inboundNumber-btn" type="button" class="btn btn-primary changeKeyType"> abc </button>  
+	<!--<button id="inboundNumber-btn" type="button" class="btn btn-primary changeKeyType"> abc </button>  -->
 
  </div> 
  <div class="form-group required keyboard">
@@ -42,7 +43,7 @@
                   id="trailerNumber"
                   type="text" onkeypress="return blockSpecialChars(event)">
                   
- <button id="trailerNumber-btn" type="button" class="btn btn-primary changeKeyType"> abc </button>
+<!-- <button id="trailerNumber-btn" type="button" class="btn btn-primary changeKeyType"> abc </button> -->
             
  </div>
  
