@@ -1,44 +1,41 @@
 
 $(document).ready(function(){
-   var numButtons = "";
+    var numButtons = "";
     var inputToggle,sel;
     //add numbers 0-9
 
         numButtons += "<div class='row' style='margin-left:0px;'><div class='col-xs-4' style='text-align: center;'><button class='numKey' value='1' onclick='addValueToField(this.value)'  />" + 1 + "</button></div>"
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='2'   />" + 2 + "</button></div>"
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='3'   />" + 3 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='2' onclick='addValueToField(this.value)'  />" + 2 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='3' onclick='addValueToField(this.value)'  />" + 3 + "</button></div>"
 
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='4'   />" + 4 + "</button></div>"
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='5'   />" + 5 + "</button></div>";
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='6'  />" + 6 + "</button></div>";
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='4' onclick='addValueToField(this.value)'  />" + 4 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='5' onclick='addValueToField(this.value)'  />" + 5 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='6' onclick='addValueToField(this.value)' />" + 6 + "</button></div>"
 
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='7'   />" + 7 + "</button></div>";
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='8'   />" + 8 + "</button></div>";
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='9'   />" + 9 + "</button></div>";
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='abc'   /> abc </button></div>";
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='7' onclick='addValueToField(this.value)'  />" + 7 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='8' onclick='addValueToField(this.value)'  />" + 8 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='9' onclick='addValueToField(this.value)'  />" + 9 + "</button></div>"
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='abc' onclick='addValueToField(this.value)'  /> abc </button></div>"
 
-    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='0'  >0</button></div><div class='col-xs-4' style='text-align: center;'> <button class='numKey' value='<'  ><</button></div> ";
-    numButtons += "<div class='col-xs-6 col-xs-offset-3' style='text-align: center;'><button class='numKey' value='GO' /> GO </button></div></div>";
+    numButtons += "<div class='col-xs-4' style='text-align: center;'><button class='numKey' value='0' onclick='addValueToField(this.value)' >0</button></div><div class='col-xs-4' style='text-align: center;'> <button class='numKey' value='<' onclick='addValueToField(this.value)' ><</button></div> "
+    numButtons += "<div class='col-xs-6 col-xs-offset-3' style='text-align: center;'><button class='numKey' value='GO' onclick='addValueToField(this.value)'  /> GO </button></div></div>"
     document.getElementById('switch').innerHTML = numButtons;
     function hideKeyboard(element) {
         $(element).attr('readonly', 'readonly'); // Force keyboard to hide on input field.
 
-//         setTimeout(function() {
-//             $(element).blur();  //actually close the keyboard
-//             document.activeElement.blur();
-//             $('input').blur(); // trigger blur event from all inputs.
-//             // Remove readonly attribute after keyboard is hidden.
-//             $(element).removeAttr('readonly');
-//            // $(element).focus(); //bring cursor back to the input field
-//         }, 100);
+        setTimeout(function() {
+            $(element).blur();  //actually close the keyboard
+            document.activeElement.blur();
+            $('input').blur(); // trigger blur event from all inputs.
+            // Remove readonly attribute after keyboard is hidden.
+            $(element).removeAttr('readonly');
+           // $(element).focus(); //bring cursor back to the input field
+        }, 100);
 
     }
-   
-   $(document).off().on('click', '.numKey', function(){
-    	//myValue = ;
-    	addValueToField(this.value);
-    })
-   
+    
+    
+    
     function addValueToField(myValue){
         console.log(inputToggle);
         //to bring up alphabet keyboard
